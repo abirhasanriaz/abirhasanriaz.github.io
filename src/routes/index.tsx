@@ -4,6 +4,7 @@ import { Header } from "@/components/marketplace/Header";
 import { Hero } from "@/components/marketplace/Hero";
 import { Categories } from "@/components/marketplace/Categories";
 import { ProductGrid } from "@/components/marketplace/ProductGrid";
+import { AboutFounder } from "@/components/marketplace/AboutFounder";
 import { CartDrawer, type CartItem } from "@/components/marketplace/CartDrawer";
 import { BottomNav } from "@/components/marketplace/BottomNav";
 import { Footer } from "@/components/marketplace/Footer";
@@ -62,6 +63,7 @@ function Index() {
         <Hero />
         <Categories />
         <ProductGrid onAdd={addToCart} />
+        <AboutFounder />
       </main>
       <Footer />
       <BottomNav cartCount={cartCount} onCartOpen={() => setCartOpen(true)} />
