@@ -24,7 +24,19 @@ type ProductRow = {
   is_published: boolean;
 };
 
-const blank: Omit<ProductRow, "id"> = {
+type FormState = {
+  name: string;
+  slug: string;
+  description: string;
+  price: number;
+  compare_at_price: number | null;
+  image_url: string;
+  category: string;
+  stock: number;
+  is_published: boolean;
+};
+
+const blank: FormState = {
   name: "",
   slug: "",
   description: "",
