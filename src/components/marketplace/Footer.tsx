@@ -33,7 +33,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 text-xs text-muted-foreground flex flex-wrap justify-between gap-2">
-          <span>© 2026 Noir. All rights reserved.</span>
+          <span>© 2026 Riaz Digital Store. All rights reserved.</span>
           <span>Designed for the everyday.</span>
         </div>
       </div>
