@@ -37,7 +37,7 @@ export function AboutFounder() {
               Hi, I'm <span className="italic">Abir Hasan Riaz</span>.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              I built Noir to make premium shopping feel calm again — a curated
+              I built Riaz Digital Store to make premium shopping feel calm again — a curated
               marketplace where every product earns its place. No clutter, no
               gimmicks. Just thoughtful design and fair prices.
             </p>

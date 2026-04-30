@@ -14,13 +14,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Noir — Premium Marketplace" },
+      { title: "Riaz Digital Store — Premium Marketplace" },
       {
         name: "description",
         content:
-          "A curated minimalist marketplace for premium electronics, fashion, home and lifestyle essentials. Free delivery, fair prices.",
+          "Riaz Digital Store — a curated minimalist marketplace for premium electronics, fashion, home and lifestyle essentials. Free delivery, fair prices.",
       },
-      { property: "og:title", content: "Noir — Premium Marketplace" },
+      { property: "og:title", content: "Riaz Digital Store — Premium Marketplace" },
       {
         property: "og:description",
         content: "Curated essentials from world-class makers. Designed for the everyday.",

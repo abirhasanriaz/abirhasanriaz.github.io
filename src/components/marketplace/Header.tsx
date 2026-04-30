@@ -27,10 +27,10 @@ export function Header({ cartCount, onCartOpen }: HeaderProps) {
         <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <div className="h-8 w-8 rounded-xl bg-primary grid place-items-center">
-              <span className="text-primary-foreground font-bold text-sm">N</span>
+              <span className="text-primary-foreground font-bold text-sm">R</span>
             </div>
             <span className="font-display font-semibold text-lg tracking-tight hidden sm:inline">
-              Noir
+              Riaz Digital Store
             </span>
           </Link>
 

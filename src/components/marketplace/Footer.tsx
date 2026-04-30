@@ -5,9 +5,9 @@ export function Footer() {
         <div className="col-span-2">
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-xl bg-primary grid place-items-center">
-              <span className="text-primary-foreground font-bold text-sm">N</span>
+              <span className="text-primary-foreground font-bold text-sm">R</span>
             </div>
-            <span className="font-display font-semibold text-lg">Noir</span>
+            <span className="font-display font-semibold text-lg">Riaz Digital Store</span>
           </div>
           <p className="text-sm text-muted-foreground mt-4 max-w-xs">
             A curated marketplace for the things you love. Premium quality, fair prices.
@@ -33,7 +33,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 text-xs text-muted-foreground flex flex-wrap justify-between gap-2">
-          <span>© 2026 Noir. All rights reserved.</span>
+          <span>© 2026 Riaz Digital Store. All rights reserved.</span>
           <span>Designed for the everyday.</span>
         </div>
       </div>
