@@ -71,7 +71,7 @@ function Index() {
         items={cart}
         onQty={updateQty}
         onRemove={removeItem}
-      </CartDrawer>
+      />
     </div>
   );
 }
