@@ -3,13 +3,38 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Loader2, Plus, Pencil, Trash2, ArrowLeft, Upload, X } from "lucide-react";
+import { Loader2, Plus, Pencil, Trash2, ArrowLeft, Upload, X, Package, ShoppingCart } from "lucide-react";
 import { categories } from "@/components/marketplace/data";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
-  head: () => ({ meta: [{ title: "Admin — Noir" }] }),
+  head: () => ({ meta: [{ title: "Admin — Riaz Digital Store" }] }),
 });
+
+type OrderRow = {
+  id: string;
+  created_at: string;
+  full_name: string;
+  email: string;
+  phone: string | null;
+  shipping_address: string;
+  shipping_city: string | null;
+  shipping_country: string | null;
+  total_amount: number;
+  currency: string;
+  status: string;
+};
+
+type OrderItemRow = {
+  id: string;
+  product_name: string;
+  product_image: string | null;
+  quantity: number;
+  unit_price: number;
+  subtotal: number;
+};
+
+const ORDER_STATUSES = ["pending", "paid", "shipped", "delivered", "cancelled"] as const;
 
 type ProductRow = {
   id: string;
