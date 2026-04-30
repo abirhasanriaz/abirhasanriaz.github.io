@@ -14,16 +14,44 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Riaz Digital Store — Premium Marketplace" },
+      { title: "Abir Hasan Riaz — Founder of Riaz Digital Store" },
       {
         name: "description",
         content:
-          "Riaz Digital Store — a curated minimalist marketplace for premium electronics, fashion, home and lifestyle essentials. Free delivery, fair prices.",
+          "Official website of Abir Hasan Riaz — Founder of Riaz Digital Store, a curated premium marketplace for electronics, fashion, home and lifestyle essentials.",
       },
-      { property: "og:title", content: "Riaz Digital Store — Premium Marketplace" },
+      { name: "keywords", content: "Abir Hasan Riaz, Abir Hasan, Riaz Digital Store, Abir Riaz, Bangladesh entrepreneur, online store" },
+      { name: "author", content: "Abir Hasan Riaz" },
+      { property: "og:title", content: "Abir Hasan Riaz — Riaz Digital Store" },
       {
         property: "og:description",
-        content: "Curated essentials from world-class makers. Designed for the everyday.",
+        content: "Official site of Abir Hasan Riaz, founder of Riaz Digital Store — a curated premium marketplace.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Abir Hasan Riaz — Riaz Digital Store" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Person",
+              "name": "Abir Hasan Riaz",
+              "alternateName": ["Abir Hasan", "Abir Riaz"],
+              "jobTitle": "Founder",
+              "worksFor": { "@type": "Organization", "name": "Riaz Digital Store" },
+              "description": "Founder of Riaz Digital Store, a premium curated online marketplace.",
+            },
+            {
+              "@type": "Organization",
+              "name": "Riaz Digital Store",
+              "founder": { "@type": "Person", "name": "Abir Hasan Riaz" },
+            },
+          ],
+        }),
       },
     ],
   }),
