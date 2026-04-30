@@ -10,18 +10,18 @@ export function Hero() {
           <div className="space-y-8 animate-fade-up">
             <div className="inline-flex items-center gap-2 rounded-full bg-surface border border-border/80 px-3 py-1.5 text-xs font-medium text-muted-foreground shadow-soft">
               <Sparkles className="h-3.5 w-3.5" strokeWidth={2} />
-              New Spring Collection · 2026
+              Founded by Abir Hasan Riaz · 2026
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]">
-              Designed for
+              Riaz Digital Store
               <br />
-              <span className="italic font-light text-muted-foreground">the everyday.</span>
+              <span className="italic font-light text-muted-foreground">by Abir Hasan Riaz.</span>
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              Curated essentials from world-class makers. Premium quality, thoughtfully designed,
-              delivered to your door.
+              Curated premium essentials from <strong className="font-medium text-foreground">Abir Hasan Riaz</strong> —
+              thoughtfully designed, fairly priced, delivered to your door.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
