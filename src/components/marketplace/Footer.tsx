@@ -5,9 +5,9 @@ export function Footer() {
         <div className="col-span-2">
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-xl bg-primary grid place-items-center">
-              <span className="text-primary-foreground font-bold text-sm">N</span>
+              <span className="text-primary-foreground font-bold text-sm">R</span>
             </div>
-            <span className="font-display font-semibold text-lg">Noir</span>
+            <span className="font-display font-semibold text-lg">Riaz Digital Store</span>
           </div>
           <p className="text-sm text-muted-foreground mt-4 max-w-xs">
             A curated marketplace for the things you love. Premium quality, fair prices.
