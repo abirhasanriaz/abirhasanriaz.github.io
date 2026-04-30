@@ -31,8 +31,8 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Noir — Premium Marketplace" },
-      { name: "description", content: "A curated minimalist marketplace for premium essentials." },
+      { title: "Riaz Digital Store — Premium Marketplace" },
+      { name: "description", content: "Riaz Digital Store — a curated minimalist marketplace for premium essentials." },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
