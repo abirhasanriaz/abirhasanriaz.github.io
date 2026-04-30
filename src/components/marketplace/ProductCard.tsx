@@ -46,7 +46,7 @@ export function ProductCard({ product, onAdd }: Props) {
       </div>
 
       <div className="pt-4 px-1 space-y-1">
-        <div className="text-xs text-muted-foreground">{product.brand}</div>
+        {product.brand && <div className="text-xs text-muted-foreground">{product.brand}</div>}
         <h3 className="font-medium text-sm leading-snug truncate">{product.name}</h3>
         <div className="flex items-baseline gap-2 pt-1">
           <span className="font-display font-semibold">${product.price}</span>

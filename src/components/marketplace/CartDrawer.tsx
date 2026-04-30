@@ -65,7 +65,7 @@ export function CartDrawer({ open, onClose, items, onQty, onRemove }: Props) {
                     <img src={it.image} alt={it.name} className="h-full w-full object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs text-muted-foreground">{it.brand}</div>
+                    {it.brand && <div className="text-xs text-muted-foreground">{it.brand}</div>}
                     <div className="text-sm font-medium truncate">{it.name}</div>
                     <div className="font-display font-semibold text-sm mt-1">${it.price}</div>
                     <div className="flex items-center gap-2 mt-2">
