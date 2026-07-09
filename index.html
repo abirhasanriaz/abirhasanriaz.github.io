@@ -16,6 +16,9 @@
   <meta name="twitter:title" content="Abir Hasan Riaz — Photographer | Khulna"/>
   <meta name="google-site-verification" content="L2d972Js5DC-h3EMP-BEEXwLs9dC-mEWlWflQWBw15s" />
   <link rel="canonical" href="https://abirhasanriaz.github.io"/>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#c8923a"/>
+  <link rel="apple-touch-icon" href="icon-192.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1538,6 +1541,11 @@
 
 
 <script>
+/* SERVICE WORKER REGISTER */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+
 let deferredPrompt;
 // Show button always after 2 seconds
 setTimeout(() => {
