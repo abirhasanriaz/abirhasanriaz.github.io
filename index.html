@@ -74,6 +74,22 @@
       text-decoration: none;
     }
     .nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
+    .nav-socials { display: flex; gap: 0.5rem; align-items: center; margin-left: 1rem; }
+    .nav-social-btn {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: rgba(255,255,255,0.06); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem; text-decoration: none; color: rgba(255,255,255,0.75);
+      transition: all 0.25s; flex-shrink: 0;
+    }
+    .nav-social-btn:hover { background: rgba(200,146,58,0.15); border-color: rgba(200,146,58,0.4); transform: translateY(-2px); }
+    .nav-social-btn.fb:hover { background: rgba(24,119,242,0.15); border-color: rgba(24,119,242,0.4); color: #1877f2; }
+    .nav-social-btn.ig:hover { background: rgba(225,48,108,0.15); border-color: rgba(225,48,108,0.4); color: #e1306c; }
+    .nav-social-btn.wa:hover { background: rgba(37,211,102,0.15); border-color: rgba(37,211,102,0.4); color: #25d366; }
+    .footer-social.fb:hover { color: #1877f2; border-color: rgba(24,119,242,0.4); }
+    .footer-social.ig:hover { color: #e1306c; border-color: rgba(225,48,108,0.4); }
+    .footer-social.wa:hover { color: #25d366; border-color: rgba(37,211,102,0.4); }
+    .footer-social.gm:hover { color: #ea4335; border-color: rgba(234,67,53,0.4); }
     #navInstallBtn {
       display: none;
       align-items: center; justify-content: center;
@@ -381,7 +397,7 @@
     .clink:hover { border-color: rgba(200,146,58,0.3); transform: translateX(5px); }
     .clink-icon {
       width: 42px; height: 42px; border-radius: 11px;
-      display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; color: #fff;
     }
     .fb-bg { background: linear-gradient(135deg, #1877f2, #0a5dc2); }
     .wa-bg { background: linear-gradient(135deg, #25d366, #128c7e); }
@@ -417,6 +433,7 @@
       display: flex; align-items: center; justify-content: center;
       background: var(--card); border: 1px solid var(--border);
       text-decoration: none; font-size: 0.95rem; transition: all 0.2s;
+      color: rgba(255,255,255,0.75);
     }
     .footer-social:hover { border-color: rgba(200,146,58,0.35); transform: translateY(-2px); }
     .footer-note { font-size: 0.73rem; color: var(--muted); }
@@ -818,7 +835,7 @@
 
 <!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/8801410052403?text=Hi%20Abir!%20I%20need%20your%20service." target="_blank" id="waFloat" title="WhatsApp এ মেসেজ দিন">
-  💬
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
 </a>
 
 <!-- NAV -->
@@ -834,6 +851,11 @@
     <li><a href="#about">About</a></li>
     <li><a href="#contact" class="nav-cta">Hire Me</a></li>
   </ul>
+  <div class="nav-socials">
+    <a href="https://www.facebook.com/abirhasanriaz07" target="_blank" class="nav-social-btn fb" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="18" height="18" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+    <a href="https://www.instagram.com/abir_hasan_riaz" target="_blank" class="nav-social-btn ig" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    <a href="https://wa.me/8801410052403?text=Hi%20Abir!%20I%20need%20your%20service." target="_blank" class="nav-social-btn wa" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+  </div>
   <button id="navInstallBtn" onclick="installApp()" title="Install App">⬇</button>
 </nav>
 
@@ -881,8 +903,8 @@
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Years Experience</div></div>
-  <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Projects Done</div></div>
-  <div class="stat"><div class="stat-num">100+</div><div class="stat-label">Happy Clients</div></div>
+  <div class="stat"><div class="stat-num">600+</div><div class="stat-label">Projects Done</div></div>
+  <div class="stat"><div class="stat-num">450+</div><div class="stat-label">Happy Clients</div></div>
   <div class="stat"><div class="stat-num">9</div><div class="stat-label">Services</div></div>
   <div class="stat"><div class="stat-num">5★</div><div class="stat-label">Client Rating</div></div>
 </div>
@@ -1136,12 +1158,12 @@
     <div class="review-card">
       <div class="review-quote">"</div>
       <div class="review-stars">★★★★★</div>
-      <div class="review-text">অসাধারণ কাজ! আমার বিয়ের ফটোগ্রাফি এত সুন্দর হয়েছে যে দেখে চোখ জুড়িয়ে যায়। Abir ভাই সত্যিই প্রফেশনাল।</div>
+      <div class="review-text">আমার বোনের বিয়ের ফটোগ্রাফি করেছিলেন Abir ভাই। ছবিগুলো এত সুন্দর হয়েছে যে পরিবারের সবাই মুগ্ধ। সত্যিই অসাধারণ কাজ।</div>
       <div class="review-author">
         <div class="review-avatar">R</div>
         <div>
           <div class="review-name">রাফি আহমেদ</div>
-          <div class="review-loc">📍 খুলনা</div>
+          <div class="review-loc">📍 খুলনা সদর</div>
         </div>
       </div>
     </div>
@@ -1149,51 +1171,12 @@
     <div class="review-card">
       <div class="review-quote">"</div>
       <div class="review-stars">★★★★★</div>
-      <div class="review-text">আমার Facebook Page এর কাজ অনেক ভালো করেছেন। মাত্র ১ মাসে ফলোয়ার অনেক বেড়েছে। ধন্যবাদ Abir ভাই!</div>
-      <div class="review-author">
-        <div class="review-avatar">N</div>
-        <div>
-          <div class="review-name">নাফিসা ইসলাম</div>
-          <div class="review-loc">📍 ঢাকা</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-quote">"</div>
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">ওয়েবসাইট ডিজাইন এবং হোস্টিং সার্ভিস খুবই ভালো। দ্রুত কাজ করেন, সৎ মানুষ। সবাইকে রেকমেন্ড করব।</div>
-      <div class="review-author">
-        <div class="review-avatar">T</div>
-        <div>
-          <div class="review-name">তানভীর হোসেন</div>
-          <div class="review-loc">📍 চট্টগ্রাম</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-quote">"</div>
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">বিদেশে যাওয়ার জন্য Abir ভাইয়ের সাহায্য নিয়েছিলাম। সব কিছু ঠিকঠাক হয়েছে। অনেক ধন্যবাদ।</div>
-      <div class="review-author">
-        <div class="review-avatar">S</div>
-        <div>
-          <div class="review-name">সাকিব রহমান</div>
-          <div class="review-loc">📍 যশোর</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-quote">"</div>
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">সিনেমাটিক ভিডিও দেখে অবাক হয়ে গেছি! আমার কর্পোরেট ইভেন্টের ভিডিও এত প্রফেশনাল হবে ভাবিনি।</div>
+      <div class="review-text">ভিডিও এডিটিং করিয়েছিলাম, কাজ দেখে অবাক হয়ে গেছি। ডেডলাইনের আগেই দিয়ে দিয়েছেন। পরের কাজও Abir ভাইকেই দেব।</div>
       <div class="review-author">
         <div class="review-avatar">M</div>
         <div>
-          <div class="review-name">মাহমুদ হাসান</div>
-          <div class="review-loc">📍 খুলনা</div>
+          <div class="review-name">মাসুম বিল্লাহ</div>
+          <div class="review-loc">📍 সোনাডাঙ্গা, খুলনা</div>
         </div>
       </div>
     </div>
@@ -1201,12 +1184,181 @@
     <div class="review-card">
       <div class="review-quote">"</div>
       <div class="review-stars">★★★★★</div>
-      <div class="review-text">IT সাপোর্ট নিয়েছিলাম, কম্পিউটারের সমস্যা খুব দ্রুত ঠিক করে দিয়েছেন। দাম ও সাশ্রয়ী। বেস্ট সার্ভিস!</div>
+      <div class="review-text">আমার ল্যাপটপে অনেকদিন ধরে সমস্যা ছিল, অনেক জায়গায় দেখিয়েছি ঠিক হয়নি। Abir ভাই এক দিনেই ঠিক করে দিলেন। দাম ও বেশি নেয়নি।</div>
+      <div class="review-author">
+        <div class="review-avatar">S</div>
+        <div>
+          <div class="review-name">সাজিদ হোসেন</div>
+          <div class="review-loc">📍 খালিশপুর, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">আমাদের গার্মেন্টসের প্রোডাক্ট ফটোশুট করিয়েছিলাম। ছবির মান দেখে বায়াররাও কমেন্ট করেছে। ব্যবসায় কাজে লেগেছে।</div>
+      <div class="review-author">
+        <div class="review-avatar">N</div>
+        <div>
+          <div class="review-name">নাজমুল করিম</div>
+          <div class="review-loc">📍 মিরডাঙ্গা, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Photo editing কাজটা অনেক ভালো লেগেছে। আমি নিজেও editing করি কিন্তু Abir ভাইয়ের কাজ দেখে বুঝলাম আরও অনেক কিছু শেখার আছে।</div>
+      <div class="review-author">
+        <div class="review-avatar">T</div>
+        <div>
+          <div class="review-name">তামান্না আক্তার</div>
+          <div class="review-loc">📍 নিউ মার্কেট, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Facebook ID হ্যাক হয়ে গিয়েছিল, অনেক চেষ্টা করেও ফেরত পাচ্ছিলাম না। Abir ভাই সাহায্য করে আইডি ফিরিয়ে দিলেন। অনেক কৃতজ্ঞ।</div>
       <div class="review-author">
         <div class="review-avatar">F</div>
         <div>
-          <div class="review-name">ফারহানা বেগম</div>
-          <div class="review-loc">📍 বাগেরহাট</div>
+          <div class="review-name">ফারিয়া ইসলাম</div>
+          <div class="review-loc">📍 বয়রা, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">আমার ছেলের জন্মদিনের ইভেন্ট কভারেজ করিয়েছিলাম। ছবি আর ভিডিও দুটোই এত সুন্দর হয়েছে। সবাইকে recommend করব।</div>
+      <div class="review-author">
+        <div class="review-avatar">R</div>
+        <div>
+          <div class="review-name">রেহানা বেগম</div>
+          <div class="review-loc">📍 দৌলতপুর, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">IT support নিয়েছিলাম printer আর network setup এর জন্য। কাজ বুঝিয়ে দিলেন, পরেও সমস্যা হলে ফোনে help করেছেন। এই মানুষ rare।</div>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div>
+          <div class="review-name">আলামিন শেখ</div>
+          <div class="review-loc">📍 রূপসা, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">আমার শপের জন্য reels বানিয়ে দিয়েছেন, Instagram এ অনেক engagement এসেছে। মাত্র ১৫ দিনে বিক্রি বেড়ে গেছে।</div>
+      <div class="review-author">
+        <div class="review-avatar">K</div>
+        <div>
+          <div class="review-name">কাওসার মাহমুদ</div>
+          <div class="review-loc">📍 শিববাড়ি, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Abir ভাই আমার পুরনো ছবিগুলো restore করে দিয়েছেন। ছবিগুলো নষ্ট হয়ে গিয়েছিল, এখন একদম নতুনের মতো। মা দেখে কাঁদলেন।</div>
+      <div class="review-author">
+        <div class="review-avatar">H</div>
+        <div>
+          <div class="review-name">হাসান মাহমুদ</div>
+          <div class="review-loc">📍 ফুলবাড়িগেট, খুলনা</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">বাগেরহাট থেকে ভেবেছিলাম দূরত্বের কারণে ঝামেলা হবে। কিন্তু Abir ভাই সব অনলাইনেই সামলে দিলেন। ওয়েবসাইট বানিয়ে দিয়েছেন, এখন অর্ডার আসছে।</div>
+      <div class="review-author">
+        <div class="review-avatar">I</div>
+        <div>
+          <div class="review-name">ইমরান হোসেন</div>
+          <div class="review-loc">📍 বাগেরহাট সদর</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">আমার মেয়ের গায়ে হলুদের ছবি তুলে দিয়েছেন। বাগেরহাট পর্যন্ত এসেছেন কোনো কথা না বলে। ছবির মান অনেক উপরে।</div>
+      <div class="review-author">
+        <div class="review-avatar">J</div>
+        <div>
+          <div class="review-name">জাহানারা বেগম</div>
+          <div class="review-loc">📍 মোংলা, বাগেরহাট</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">যশোর থেকে ভিডিও এডিটিং এর কাজ দিয়েছিলাম। সময়মতো দিয়েছেন, revision চাইলে কোনো ঝামেলা ছাড়াই করে দিয়েছেন।</div>
+      <div class="review-author">
+        <div class="review-avatar">P</div>
+        <div>
+          <div class="review-name">পলাশ সরকার</div>
+          <div class="review-loc">📍 যশোর সদর</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">আমার দোকানের জন্য logo আর banner design করিয়েছিলাম। অনেক অপশন দিয়েছেন, পছন্দ করতে সহজ হয়েছে। কাজে অনেক খুশি।</div>
+      <div class="review-author">
+        <div class="review-avatar">B</div>
+        <div>
+          <div class="review-name">বাবুল আক্তার</div>
+          <div class="review-loc">📍 অভয়নগর, যশোর</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">কেশবপুর থেকে IT সাপোর্ট নিয়েছিলাম। রাউটার সেটআপ আর ইন্টারনেট সমস্যা ছিল, ফোনে বসেই ঠিক করে দিলেন।</div>
+      <div class="review-author">
+        <div class="review-avatar">S</div>
+        <div>
+          <div class="review-name">সুমন মণ্ডল</div>
+          <div class="review-loc">📍 কেশবপুর, যশোর</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">কেশবপুরে আমাদের স্কুলের বার্ষিক অনুষ্ঠানের ফটোগ্রাফি করিয়েছিলাম। ছাত্রছাত্রীরা ছবি দেখে অনেক খুশি, শিক্ষকরাও প্রশংসা করেছেন।</div>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div>
+          <div class="review-name">আব্দুল্লাহ স্যার</div>
+          <div class="review-loc">📍 কেশবপুর সদর</div>
         </div>
       </div>
     </div>
@@ -1249,20 +1401,20 @@
   <p class="sec-sub">📍 Khulna থেকে সার্ভিস দিচ্ছি — সারা বাংলাদেশে। যোগাযোগ করুন, দ্রুত রিপ্লাই পাবেন।</p>
   <div class="contact-wrap">
     <div class="contact-links">
-      <a href="https://www.facebook.com/abirhasanriaz75" target="_blank" class="clink">
-        <div class="clink-icon fb-bg">📘</div>
+      <a href="https://www.facebook.com/abirhasanriaz07" target="_blank" class="clink">
+        <div class="clink-icon fb-bg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="18" height="18" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></div>
         <div><div class="clink-label">Facebook</div><div class="clink-val">Abir Hasan Riaz</div></div>
       </a>
       <a href="https://wa.me/8801410052403" target="_blank" class="clink">
-        <div class="clink-icon wa-bg">💬</div>
+        <div class="clink-icon wa-bg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></div>
         <div><div class="clink-label">WhatsApp</div><div class="clink-val">+880 1410-052403</div></div>
       </a>
-      <a href="#" class="clink">
-        <div class="clink-icon ig-bg">📷</div>
-        <div><div class="clink-label">Instagram</div><div class="clink-val">@abirhasanriaz</div></div>
+      <a href="https://www.instagram.com/abir_hasan_riaz" target="_blank" class="clink">
+        <div class="clink-icon ig-bg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></div>
+        <div><div class="clink-label">Instagram</div><div class="clink-val">@abir_hasan_riaz</div></div>
       </a>
       <a href="mailto:abirhasanriaz75@gmail.com" class="clink">
-        <div class="clink-icon gm-bg">✉️</div>
+        <div class="clink-icon gm-bg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></div>
         <div><div class="clink-label">Gmail</div><div class="clink-val">abirhasanriaz75@gmail.com</div></div>
       </a>
     </div>
@@ -1312,10 +1464,10 @@
     <div class="footer-loc">📍 Khulna, Bangladesh</div>
   </div>
   <div class="footer-socials">
-    <a href="https://www.facebook.com/abirhasanriaz75" target="_blank" class="footer-social">📘</a>
-    <a href="https://wa.me/8801410052403" target="_blank" class="footer-social">💬</a>
-    <a href="#" class="footer-social">📷</a>
-    <a href="mailto:abirhasanriaz75@gmail.com" class="footer-social">✉️</a>
+    <a href="https://www.facebook.com/abirhasanriaz07" target="_blank" class="footer-social fb"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="18" height="18" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+    <a href="https://www.instagram.com/abir_hasan_riaz" target="_blank" class="footer-social ig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    <a href="https://wa.me/8801410052403" target="_blank" class="footer-social wa"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18" height="18" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+    <a href="mailto:abirhasanriaz75@gmail.com" class="footer-social gm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
   </div>
   <div class="footer-note">© ২০২৬ Abir Hasan Riaz · Khulna, Bangladesh</div>
 </footer>
